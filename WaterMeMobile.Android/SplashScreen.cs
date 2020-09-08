@@ -21,6 +21,8 @@ namespace WaterMeMobile.Droid
             protected override void OnCreate(Bundle savedInstanceState)
             {
                 base.OnCreate(savedInstanceState);
+                System.Threading.Thread.Sleep(3000);
+                StartActivity(typeof(MainActivity));
             }
 
             protected override void OnResume()
