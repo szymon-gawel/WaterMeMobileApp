@@ -10,7 +10,7 @@
     <ContentPage.Content>
         <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
             <Image Source="WaterMe_logo.png" VerticalOptions="Center" HorizontalOptions="Center" Aspect="AspectFill"/>
-            <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}"/>
+            <Button VerticalOptions="Center" BackgroundColor="Transparent" BorderColor="Black" BorderWidth="1" Text="Login" Command="{Binding LoginCommand}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
