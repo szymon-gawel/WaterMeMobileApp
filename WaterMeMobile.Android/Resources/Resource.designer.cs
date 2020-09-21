@@ -8370,10 +8370,7 @@ namespace WaterMeMobile.Droid
 			public const int tooltip_frame_light = 2131165304;
 			
 			// aapt resource value: 0x7F070079
-			public const int WaterMe_logo = 2131165305;
-			
-			// aapt resource value: 0x7F07007A
-			public const int xamarin_logo = 2131165306;
+			public const int xamarin_logo = 2131165305;
 			
 			static Drawable()
 			{
