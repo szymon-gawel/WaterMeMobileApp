@@ -9,7 +9,6 @@ using Android.OS;
 
 namespace WaterMeMobile.Droid
 {
-    //Fork check
     [Activity(Label = "WaterMeMobile", 
         Icon = "@drawable/background", 
         Theme = "@style/MainTheme", 
