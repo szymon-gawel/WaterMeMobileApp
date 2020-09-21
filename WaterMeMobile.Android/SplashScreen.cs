@@ -13,7 +13,7 @@ using Android.Widget;
 namespace WaterMeMobile.Droid
 {
    
-        [Activity(Theme = "@style/Theme.Splash",
+        [Activity(Theme = "@style/Theme.Splash", 
        MainLauncher = true,
        NoHistory = true)]
         public class SplashScreen : Activity
@@ -21,21 +21,8 @@ namespace WaterMeMobile.Droid
             protected override void OnCreate(Bundle savedInstanceState)
             {
                 base.OnCreate(savedInstanceState);
-                System.Threading.Thread.Sleep(3000);
+            
                 StartActivity(typeof(MainActivity));
-            }
-
-            protected override void OnResume()
-            {
-                base.OnResume();
-                Task startUpWork = new Task(() => { SimulateStartup(); });
-                startUpWork.Start();
-            }
-
-            async void SimulateStartup()
-            {
-                await Task.Delay(2000);
-                StartActivity(new Intent(Application.Context, typeof(MainActivity)));
             }
 
         }
